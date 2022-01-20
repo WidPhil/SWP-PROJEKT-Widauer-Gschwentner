@@ -36,7 +36,6 @@ namespace Veranstaltungssoftware
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Exit3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,23 +102,11 @@ namespace Veranstaltungssoftware
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_Exit3
-            // 
-            this.btn_Exit3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit3.Location = new System.Drawing.Point(32, 398);
-            this.btn_Exit3.Name = "btn_Exit3";
-            this.btn_Exit3.Size = new System.Drawing.Size(351, 48);
-            this.btn_Exit3.TabIndex = 7;
-            this.btn_Exit3.Text = "Exit";
-            this.btn_Exit3.UseVisualStyleBackColor = true;
-            this.btn_Exit3.Click += new System.EventHandler(this.btn_Exit3_Click);
-            // 
             // Loginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 485);
-            this.Controls.Add(this.btn_Exit3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.radioButton2);
@@ -145,6 +132,5 @@ namespace Veranstaltungssoftware
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_Exit3;
     }
 }
