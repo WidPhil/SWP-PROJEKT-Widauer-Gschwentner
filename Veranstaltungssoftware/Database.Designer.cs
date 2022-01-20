@@ -34,6 +34,7 @@ namespace Veranstaltungssoftware
             this.btn_create = new System.Windows.Forms.Button();
             this.btn_use = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // combobox_DB
@@ -58,7 +59,7 @@ namespace Veranstaltungssoftware
             // btn_create
             // 
             this.btn_create.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_create.Location = new System.Drawing.Point(16, 95);
+            this.btn_create.Location = new System.Drawing.Point(16, 54);
             this.btn_create.Name = "btn_create";
             this.btn_create.Size = new System.Drawing.Size(164, 43);
             this.btn_create.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace Veranstaltungssoftware
             // btn_use
             // 
             this.btn_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_use.Location = new System.Drawing.Point(254, 95);
+            this.btn_use.Location = new System.Drawing.Point(254, 54);
             this.btn_use.Name = "btn_use";
             this.btn_use.Size = new System.Drawing.Size(164, 43);
             this.btn_use.TabIndex = 3;
@@ -78,12 +79,23 @@ namespace Veranstaltungssoftware
             // btn_delete
             // 
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Location = new System.Drawing.Point(43, 159);
+            this.btn_delete.Location = new System.Drawing.Point(37, 103);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(351, 48);
             this.btn_delete.TabIndex = 4;
             this.btn_delete.Text = "delete";
             this.btn_delete.UseVisualStyleBackColor = true;
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.Location = new System.Drawing.Point(37, 167);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(351, 48);
+            this.btn_Exit.TabIndex = 5;
+            this.btn_Exit.Text = "Exit";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // Database
             // 
@@ -91,6 +103,7 @@ namespace Veranstaltungssoftware
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(430, 244);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_use);
             this.Controls.Add(this.btn_create);
@@ -111,5 +124,6 @@ namespace Veranstaltungssoftware
         private System.Windows.Forms.Button btn_create;
         private System.Windows.Forms.Button btn_use;
         private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_Exit;
     }
 }

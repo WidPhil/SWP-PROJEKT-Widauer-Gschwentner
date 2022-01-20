@@ -27,5 +27,10 @@ namespace Veranstaltungssoftware
             Database cdb = new Database();
             cdb.Show();
         }
+
+        private void btn_Exit3_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
     }
 }
