@@ -44,6 +44,8 @@ namespace Veranstaltungssoftware
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lbl_party = new System.Windows.Forms.Label();
             this.textBoxParty = new System.Windows.Forms.TextBox();
+            this.lbl_budget = new System.Windows.Forms.Label();
+            this.textBoxBudget = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -195,12 +197,33 @@ namespace Veranstaltungssoftware
             this.textBoxParty.Size = new System.Drawing.Size(196, 22);
             this.textBoxParty.TabIndex = 14;
             // 
+            // lbl_budget
+            // 
+            this.lbl_budget.AutoSize = true;
+            this.lbl_budget.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_budget.Location = new System.Drawing.Point(17, 448);
+            this.lbl_budget.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_budget.Name = "lbl_budget";
+            this.lbl_budget.Size = new System.Drawing.Size(96, 29);
+            this.lbl_budget.TabIndex = 15;
+            this.lbl_budget.Text = "Budget:";
+            this.lbl_budget.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textBoxBudget
+            // 
+            this.textBoxBudget.Location = new System.Drawing.Point(342, 455);
+            this.textBoxBudget.Name = "textBoxBudget";
+            this.textBoxBudget.Size = new System.Drawing.Size(196, 22);
+            this.textBoxBudget.TabIndex = 16;
+            // 
             // VeranstaltungsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1335, 626);
+            this.Controls.Add(this.textBoxBudget);
+            this.Controls.Add(this.lbl_budget);
             this.Controls.Add(this.textBoxParty);
             this.Controls.Add(this.lbl_party);
             this.Controls.Add(this.dataGridView1);
@@ -244,5 +267,7 @@ namespace Veranstaltungssoftware
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lbl_party;
         private System.Windows.Forms.TextBox textBoxParty;
+        private System.Windows.Forms.Label lbl_budget;
+        private System.Windows.Forms.TextBox textBoxBudget;
     }
 }
