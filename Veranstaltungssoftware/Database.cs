@@ -15,6 +15,40 @@ namespace Veranstaltungssoftware
         public Database()
         {
             InitializeComponent();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void combobox_DB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_create_Click(object sender, EventArgs e)
+        {
+            Manager.NameofDB = combobox_DB.Text;
+            Manager.createDB();
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            Manager.NameofDB = combobox_DB.Text;
+            Manager.deleteDB();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void Database_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
