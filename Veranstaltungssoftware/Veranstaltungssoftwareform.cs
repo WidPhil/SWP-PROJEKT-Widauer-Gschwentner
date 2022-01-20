@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Veranstaltungssoftware
 {
-    public partial class Veranstaltungssoftware : Form
+    public partial class Veranstaltungssoftwareform : Form
     {
-        public Veranstaltungssoftware()
+        public Veranstaltungssoftwareform()
         {
             InitializeComponent();
         }

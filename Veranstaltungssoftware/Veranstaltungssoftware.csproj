@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionException.cs" />
-    <Compile Include="Veranstaltungssoftware.cs">
+    <Compile Include="Veranstaltungssoftwareform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Veranstaltungssoftware.Designer.cs">
-      <DependentUpon>Veranstaltungssoftware.cs</DependentUpon>
+    <Compile Include="Veranstaltungssoftwareform.Designer.cs">
+      <DependentUpon>Veranstaltungssoftwareform.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Loginform.cs">
@@ -75,8 +75,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Veranstaltungssoftware.resx">
-      <DependentUpon>Veranstaltungssoftware.cs</DependentUpon>
+    <EmbeddedResource Include="Veranstaltungssoftwareform.resx">
+      <DependentUpon>Veranstaltungssoftwareform.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,7 +1,7 @@
 ﻿
 namespace Veranstaltungssoftware
 {
-    partial class Veranstaltungssoftware
+    partial class Veranstaltungssoftwareform
     {
         /// <summary>
         /// Required designer variable.
