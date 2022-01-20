@@ -62,7 +62,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TabelException.cs" />
+    <Compile Include="TableException.cs" />
     <Compile Include="Table.cs">
       <SubType>Form</SubType>
     </Compile>
