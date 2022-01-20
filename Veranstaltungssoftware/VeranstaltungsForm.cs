@@ -56,30 +56,5 @@ namespace Veranstaltungssoftware
         {
 
         }
-
-        private void textBoxDJ_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxGetränke_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxEssen_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxAdresse_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxParty_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -98,7 +98,6 @@ namespace Veranstaltungssoftware
             this.textBoxDJ.Name = "textBoxDJ";
             this.textBoxDJ.Size = new System.Drawing.Size(196, 22);
             this.textBoxDJ.TabIndex = 4;
-            this.textBoxDJ.TextChanged += new System.EventHandler(this.textBoxDJ_TextChanged);
             // 
             // lbl_getränke
             // 
@@ -118,7 +117,6 @@ namespace Veranstaltungssoftware
             this.textBoxGetränke.Name = "textBoxGetränke";
             this.textBoxGetränke.Size = new System.Drawing.Size(196, 22);
             this.textBoxGetränke.TabIndex = 6;
-            this.textBoxGetränke.TextChanged += new System.EventHandler(this.textBoxGetränke_TextChanged);
             // 
             // label1
             // 
@@ -138,7 +136,6 @@ namespace Veranstaltungssoftware
             this.textBoxAdresse.Name = "textBoxAdresse";
             this.textBoxAdresse.Size = new System.Drawing.Size(196, 22);
             this.textBoxAdresse.TabIndex = 8;
-            this.textBoxAdresse.TextChanged += new System.EventHandler(this.textBoxAdresse_TextChanged);
             // 
             // lbl_Essen
             // 
@@ -158,7 +155,6 @@ namespace Veranstaltungssoftware
             this.textBoxEssen.Name = "textBoxEssen";
             this.textBoxEssen.Size = new System.Drawing.Size(196, 22);
             this.textBoxEssen.TabIndex = 10;
-            this.textBoxEssen.TextChanged += new System.EventHandler(this.textBoxEssen_TextChanged);
             // 
             // btn_TableGuests
             // 
@@ -198,7 +194,6 @@ namespace Veranstaltungssoftware
             this.textBoxParty.Name = "textBoxParty";
             this.textBoxParty.Size = new System.Drawing.Size(196, 22);
             this.textBoxParty.TabIndex = 14;
-            this.textBoxParty.TextChanged += new System.EventHandler(this.textBoxParty_TextChanged);
             // 
             // VeranstaltungsForm
             // 
