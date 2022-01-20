@@ -71,5 +71,11 @@ namespace Veranstaltungssoftware
         {
 
         }
+
+        private void btn_Exit1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }        
+
     }
 }

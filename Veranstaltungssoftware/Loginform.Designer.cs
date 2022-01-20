@@ -56,7 +56,9 @@ namespace Veranstaltungssoftware
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 20);
             this.textBox1.TabIndex = 1;
+
             this.textBox1.Text = "(localdb)\\MSSQLLocalDB";
+
             // 
             // pictureBox1
             // 
@@ -114,12 +116,14 @@ namespace Veranstaltungssoftware
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(508, 307);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Title);
+
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_db);
