@@ -31,11 +31,11 @@ namespace Veranstaltungssoftware
         {
             this.lbl_Table = new System.Windows.Forms.Label();
             this.comboBox_Tables = new System.Windows.Forms.ComboBox();
-            this.lbl_column = new System.Windows.Forms.Label();
+            this.txtbox_col2 = new System.Windows.Forms.Label();
             this.comboBox_Tables2 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtbox_col3 = new System.Windows.Forms.Label();
             this.comboBox_Tables3 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtbox_col4 = new System.Windows.Forms.Label();
             this.comboBox_Tables4 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -58,16 +58,16 @@ namespace Veranstaltungssoftware
             this.comboBox_Tables.Size = new System.Drawing.Size(159, 21);
             this.comboBox_Tables.TabIndex = 1;
             // 
-            // lbl_column
+            // txtbox_col2
             // 
-            this.lbl_column.AutoSize = true;
-            this.lbl_column.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_column.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_column.Location = new System.Drawing.Point(43, 140);
-            this.lbl_column.Name = "lbl_column";
-            this.lbl_column.Size = new System.Drawing.Size(72, 18);
-            this.lbl_column.TabIndex = 2;
-            this.lbl_column.Text = "Column 2";
+            this.txtbox_col2.AutoSize = true;
+            this.txtbox_col2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_col2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtbox_col2.Location = new System.Drawing.Point(43, 140);
+            this.txtbox_col2.Name = "txtbox_col2";
+            this.txtbox_col2.Size = new System.Drawing.Size(72, 18);
+            this.txtbox_col2.TabIndex = 2;
+            this.txtbox_col2.Text = "Column 2";
             // 
             // comboBox_Tables2
             // 
@@ -77,16 +77,16 @@ namespace Veranstaltungssoftware
             this.comboBox_Tables2.Size = new System.Drawing.Size(159, 21);
             this.comboBox_Tables2.TabIndex = 3;
             // 
-            // label1
+            // txtbox_col3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(43, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 18);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Column 3";
+            this.txtbox_col3.AutoSize = true;
+            this.txtbox_col3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_col3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtbox_col3.Location = new System.Drawing.Point(43, 213);
+            this.txtbox_col3.Name = "txtbox_col3";
+            this.txtbox_col3.Size = new System.Drawing.Size(72, 18);
+            this.txtbox_col3.TabIndex = 4;
+            this.txtbox_col3.Text = "Column 3";
             // 
             // comboBox_Tables3
             // 
@@ -96,16 +96,16 @@ namespace Veranstaltungssoftware
             this.comboBox_Tables3.Size = new System.Drawing.Size(159, 21);
             this.comboBox_Tables3.TabIndex = 5;
             // 
-            // label2
+            // txtbox_col4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(43, 281);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 18);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Column 4";
+            this.txtbox_col4.AutoSize = true;
+            this.txtbox_col4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_col4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtbox_col4.Location = new System.Drawing.Point(43, 281);
+            this.txtbox_col4.Name = "txtbox_col4";
+            this.txtbox_col4.Size = new System.Drawing.Size(72, 18);
+            this.txtbox_col4.TabIndex = 6;
+            this.txtbox_col4.Text = "Column 4";
             // 
             // comboBox_Tables4
             // 
@@ -122,11 +122,11 @@ namespace Veranstaltungssoftware
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(272, 389);
             this.Controls.Add(this.comboBox_Tables4);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtbox_col4);
             this.Controls.Add(this.comboBox_Tables3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtbox_col3);
             this.Controls.Add(this.comboBox_Tables2);
-            this.Controls.Add(this.lbl_column);
+            this.Controls.Add(this.txtbox_col2);
             this.Controls.Add(this.comboBox_Tables);
             this.Controls.Add(this.lbl_Table);
             this.Name = "Table";
@@ -141,11 +141,11 @@ namespace Veranstaltungssoftware
 
         private System.Windows.Forms.Label lbl_Table;
         private System.Windows.Forms.ComboBox comboBox_Tables;
-        private System.Windows.Forms.Label lbl_column;
+        private System.Windows.Forms.Label txtbox_col2;
         private System.Windows.Forms.ComboBox comboBox_Tables2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtbox_col3;
         private System.Windows.Forms.ComboBox comboBox_Tables3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label txtbox_col4;
         private System.Windows.Forms.ComboBox comboBox_Tables4;
     }
 }
