@@ -60,11 +60,9 @@ namespace Veranstaltungssoftware
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Veranstaltungssoftware.Properties.Resources.COVID_19_Testzertifikat_Widauer_20211030_2021_10_31_12_22_44;
             this.pictureBox1.Location = new System.Drawing.Point(353, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
