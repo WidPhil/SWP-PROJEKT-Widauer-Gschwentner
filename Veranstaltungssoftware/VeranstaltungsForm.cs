@@ -16,5 +16,70 @@ namespace Veranstaltungssoftware
         {
             InitializeComponent();
         }
+
+        private void lbl_veranstaltungsform_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_guests_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_dj_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_getränke_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_Essen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_party_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxDJ_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxGetränke_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEssen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxAdresse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxParty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
