@@ -62,18 +62,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TabelException.cs" />
+    <Compile Include="TableException.cs" />
     <Compile Include="Table.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Table.Designer.cs">
       <DependentUpon>Table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Veranstaltungsform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Veranstaltungsform.Designer.cs">
-      <DependentUpon>Veranstaltungsform.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Database.resx">
       <DependentUpon>Database.cs</DependentUpon>
@@ -92,9 +86,6 @@
     </Compile>
     <EmbeddedResource Include="Table.resx">
       <DependentUpon>Table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Veranstaltungsform.resx">
-      <DependentUpon>Veranstaltungsform.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

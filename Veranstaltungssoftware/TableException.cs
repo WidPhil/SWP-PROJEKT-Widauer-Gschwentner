@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Veranstaltungssoftware
 {
-    class TabelException : Exception
+    class TableException : Exception
     {
-        public TabelException(string message) : base(message)
+        public TableException(string message) : base(message)
         {
 
         }
 
-        public TabelException()
+        public TableException()
         {
 
         }
