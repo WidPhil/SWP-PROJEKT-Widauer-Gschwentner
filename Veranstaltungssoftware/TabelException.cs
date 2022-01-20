@@ -10,7 +10,7 @@ namespace Veranstaltungssoftware
     {
         public TabelException(string message) : base(message)
         {
-
+            message = "it failed";
         }
 
         public TabelException()
