@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionException.cs" />
+    <Compile Include="Veranstaltungssoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veranstaltungssoftware.Designer.cs">
+      <DependentUpon>Veranstaltungssoftware.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Loginform.cs">
       <SubType>Form</SubType>
@@ -67,7 +73,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Veranstaltungssoftware.resx">
+      <DependentUpon>Veranstaltungssoftware.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,6 +90,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COVID-19-Testzertifikat-Widauer-20211030 2021-10-31 12_22_44.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
