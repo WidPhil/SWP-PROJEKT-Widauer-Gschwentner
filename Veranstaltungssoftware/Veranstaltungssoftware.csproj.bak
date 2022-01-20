@@ -47,11 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionException.cs" />
-    <Compile Include="Database.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Database.Designer.cs">
-      <DependentUpon>Database.cs</DependentUpon>
+
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Loginform.cs">
@@ -83,9 +79,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Table.resx">
-      <DependentUpon>Table.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COVID-19-Testzertifikat-Widauer-20211030 2021-10-31 12_22_44.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
