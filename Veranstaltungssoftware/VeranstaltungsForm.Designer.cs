@@ -36,20 +36,27 @@ namespace Veranstaltungssoftware
             this.textBoxDJ = new System.Windows.Forms.TextBox();
             this.lbl_getränke = new System.Windows.Forms.Label();
             this.textBoxGetränke = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxAdresse = new System.Windows.Forms.TextBox();
+            this.lbl_street = new System.Windows.Forms.Label();
+            this.textBoxStreet = new System.Windows.Forms.TextBox();
             this.lbl_Essen = new System.Windows.Forms.Label();
             this.textBoxEssen = new System.Windows.Forms.TextBox();
             this.btn_TableGuests = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbl_party = new System.Windows.Forms.Label();
-            this.textBoxParty = new System.Windows.Forms.TextBox();
+            this.lbl_event = new System.Windows.Forms.Label();
+            this.textBoxEvent = new System.Windows.Forms.TextBox();
             this.lbl_budget = new System.Windows.Forms.Label();
-            this.textBoxBudget = new System.Windows.Forms.TextBox();
-            this.btn_VeranstaltungAdd = new System.Windows.Forms.Button();
+            this.btn_createEvent = new System.Windows.Forms.Button();
             this.btn_editTable = new System.Windows.Forms.Button();
+            this.lbl_plz = new System.Windows.Forms.Label();
+            this.txt_PLZ = new System.Windows.Forms.TextBox();
+            this.lbl_houseNumber = new System.Windows.Forms.Label();
+            this.txt_houseNumber = new System.Windows.Forms.TextBox();
+            this.lbl_eventName = new System.Windows.Forms.Label();
+            this.txt_nameEvent = new System.Windows.Forms.TextBox();
+            this.numericUpDownBudget = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBudget)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_veranstaltungsform
@@ -68,7 +75,7 @@ namespace Veranstaltungssoftware
             // 
             this.lbl_guests.AutoSize = true;
             this.lbl_guests.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_guests.Location = new System.Drawing.Point(13, 146);
+            this.lbl_guests.Location = new System.Drawing.Point(12, 184);
             this.lbl_guests.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_guests.Name = "lbl_guests";
             this.lbl_guests.Size = new System.Drawing.Size(201, 29);
@@ -80,7 +87,7 @@ namespace Veranstaltungssoftware
             // 
             this.lbl_dj.AutoSize = true;
             this.lbl_dj.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dj.Location = new System.Drawing.Point(13, 200);
+            this.lbl_dj.Location = new System.Drawing.Point(12, 227);
             this.lbl_dj.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_dj.Name = "lbl_dj";
             this.lbl_dj.Size = new System.Drawing.Size(169, 29);
@@ -90,7 +97,7 @@ namespace Veranstaltungssoftware
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(342, 146);
+            this.numericUpDown1.Location = new System.Drawing.Point(342, 184);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(196, 22);
             this.numericUpDown1.TabIndex = 3;
@@ -98,7 +105,7 @@ namespace Veranstaltungssoftware
             // 
             // textBoxDJ
             // 
-            this.textBoxDJ.Location = new System.Drawing.Point(342, 200);
+            this.textBoxDJ.Location = new System.Drawing.Point(342, 227);
             this.textBoxDJ.Name = "textBoxDJ";
             this.textBoxDJ.Size = new System.Drawing.Size(196, 22);
             this.textBoxDJ.TabIndex = 4;
@@ -107,7 +114,7 @@ namespace Veranstaltungssoftware
             // 
             this.lbl_getränke.AutoSize = true;
             this.lbl_getränke.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_getränke.Location = new System.Drawing.Point(13, 253);
+            this.lbl_getränke.Location = new System.Drawing.Point(12, 256);
             this.lbl_getränke.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_getränke.Name = "lbl_getränke";
             this.lbl_getränke.Size = new System.Drawing.Size(256, 29);
@@ -117,35 +124,35 @@ namespace Veranstaltungssoftware
             // 
             // textBoxGetränke
             // 
-            this.textBoxGetränke.Location = new System.Drawing.Point(342, 253);
+            this.textBoxGetränke.Location = new System.Drawing.Point(342, 256);
             this.textBoxGetränke.Name = "textBoxGetränke";
             this.textBoxGetränke.Size = new System.Drawing.Size(196, 22);
             this.textBoxGetränke.TabIndex = 6;
             // 
-            // label1
+            // lbl_street
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 351);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 29);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Adresse der Party:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_street.AutoSize = true;
+            this.lbl_street.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_street.Location = new System.Drawing.Point(12, 334);
+            this.lbl_street.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_street.Name = "lbl_street";
+            this.lbl_street.Size = new System.Drawing.Size(202, 29);
+            this.lbl_street.TabIndex = 7;
+            this.lbl_street.Text = "Strasse der Party:";
+            this.lbl_street.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBoxAdresse
+            // textBoxStreet
             // 
-            this.textBoxAdresse.Location = new System.Drawing.Point(342, 351);
-            this.textBoxAdresse.Name = "textBoxAdresse";
-            this.textBoxAdresse.Size = new System.Drawing.Size(196, 22);
-            this.textBoxAdresse.TabIndex = 8;
+            this.textBoxStreet.Location = new System.Drawing.Point(342, 334);
+            this.textBoxStreet.Name = "textBoxStreet";
+            this.textBoxStreet.Size = new System.Drawing.Size(196, 22);
+            this.textBoxStreet.TabIndex = 8;
             // 
             // lbl_Essen
             // 
             this.lbl_Essen.AutoSize = true;
             this.lbl_Essen.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Essen.Location = new System.Drawing.Point(13, 302);
+            this.lbl_Essen.Location = new System.Drawing.Point(13, 291);
             this.lbl_Essen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Essen.Name = "lbl_Essen";
             this.lbl_Essen.Size = new System.Drawing.Size(183, 29);
@@ -155,7 +162,7 @@ namespace Veranstaltungssoftware
             // 
             // textBoxEssen
             // 
-            this.textBoxEssen.Location = new System.Drawing.Point(342, 302);
+            this.textBoxEssen.Location = new System.Drawing.Point(342, 291);
             this.textBoxEssen.Name = "textBoxEssen";
             this.textBoxEssen.Size = new System.Drawing.Size(196, 22);
             this.textBoxEssen.TabIndex = 10;
@@ -180,30 +187,30 @@ namespace Veranstaltungssoftware
             this.dataGridView1.Size = new System.Drawing.Size(441, 359);
             this.dataGridView1.TabIndex = 12;
             // 
-            // lbl_party
+            // lbl_event
             // 
-            this.lbl_party.AutoSize = true;
-            this.lbl_party.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_party.Location = new System.Drawing.Point(17, 396);
-            this.lbl_party.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_party.Name = "lbl_party";
-            this.lbl_party.Size = new System.Drawing.Size(150, 29);
-            this.lbl_party.TabIndex = 13;
-            this.lbl_party.Text = "Art der Party:";
-            this.lbl_party.Click += new System.EventHandler(this.lbl_party_Click);
+            this.lbl_event.AutoSize = true;
+            this.lbl_event.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_event.Location = new System.Drawing.Point(13, 432);
+            this.lbl_event.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_event.Name = "lbl_event";
+            this.lbl_event.Size = new System.Drawing.Size(172, 29);
+            this.lbl_event.TabIndex = 13;
+            this.lbl_event.Text = "Art des Events:";
+            this.lbl_event.Click += new System.EventHandler(this.lbl_party_Click);
             // 
-            // textBoxParty
+            // textBoxEvent
             // 
-            this.textBoxParty.Location = new System.Drawing.Point(342, 403);
-            this.textBoxParty.Name = "textBoxParty";
-            this.textBoxParty.Size = new System.Drawing.Size(196, 22);
-            this.textBoxParty.TabIndex = 14;
+            this.textBoxEvent.Location = new System.Drawing.Point(342, 439);
+            this.textBoxEvent.Name = "textBoxEvent";
+            this.textBoxEvent.Size = new System.Drawing.Size(196, 22);
+            this.textBoxEvent.TabIndex = 14;
             // 
             // lbl_budget
             // 
             this.lbl_budget.AutoSize = true;
             this.lbl_budget.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_budget.Location = new System.Drawing.Point(17, 448);
+            this.lbl_budget.Location = new System.Drawing.Point(17, 476);
             this.lbl_budget.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_budget.Name = "lbl_budget";
             this.lbl_budget.Size = new System.Drawing.Size(96, 29);
@@ -211,23 +218,17 @@ namespace Veranstaltungssoftware
             this.lbl_budget.Text = "Budget:";
             this.lbl_budget.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBoxBudget
+            // btn_createEvent
             // 
-            this.textBoxBudget.Location = new System.Drawing.Point(342, 455);
-            this.textBoxBudget.Name = "textBoxBudget";
-            this.textBoxBudget.Size = new System.Drawing.Size(196, 22);
-            this.textBoxBudget.TabIndex = 16;
-            // 
-            // btn_VeranstaltungAdd
-            // 
-            this.btn_VeranstaltungAdd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_VeranstaltungAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_VeranstaltungAdd.Location = new System.Drawing.Point(18, 548);
-            this.btn_VeranstaltungAdd.Name = "btn_VeranstaltungAdd";
-            this.btn_VeranstaltungAdd.Size = new System.Drawing.Size(520, 43);
-            this.btn_VeranstaltungAdd.TabIndex = 17;
-            this.btn_VeranstaltungAdd.Text = "Veranstaltung hinzufügen";
-            this.btn_VeranstaltungAdd.UseVisualStyleBackColor = false;
+            this.btn_createEvent.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_createEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_createEvent.Location = new System.Drawing.Point(18, 548);
+            this.btn_createEvent.Name = "btn_createEvent";
+            this.btn_createEvent.Size = new System.Drawing.Size(520, 43);
+            this.btn_createEvent.TabIndex = 17;
+            this.btn_createEvent.Text = "Veranstaltung hinzufügen";
+            this.btn_createEvent.UseVisualStyleBackColor = false;
+            this.btn_createEvent.Click += new System.EventHandler(this.btn_createEvent_Click_1);
             // 
             // btn_editTable
             // 
@@ -240,24 +241,92 @@ namespace Veranstaltungssoftware
             this.btn_editTable.Text = "Gästetabelle bearbeiten";
             this.btn_editTable.UseVisualStyleBackColor = false;
             // 
+            // lbl_plz
+            // 
+            this.lbl_plz.AutoSize = true;
+            this.lbl_plz.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_plz.Location = new System.Drawing.Point(13, 363);
+            this.lbl_plz.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_plz.Name = "lbl_plz";
+            this.lbl_plz.Size = new System.Drawing.Size(62, 29);
+            this.lbl_plz.TabIndex = 19;
+            this.lbl_plz.Text = "PLZ:";
+            // 
+            // txt_PLZ
+            // 
+            this.txt_PLZ.Location = new System.Drawing.Point(342, 363);
+            this.txt_PLZ.Name = "txt_PLZ";
+            this.txt_PLZ.Size = new System.Drawing.Size(196, 22);
+            this.txt_PLZ.TabIndex = 20;
+            // 
+            // lbl_houseNumber
+            // 
+            this.lbl_houseNumber.AutoSize = true;
+            this.lbl_houseNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_houseNumber.Location = new System.Drawing.Point(13, 392);
+            this.lbl_houseNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_houseNumber.Name = "lbl_houseNumber";
+            this.lbl_houseNumber.Size = new System.Drawing.Size(162, 29);
+            this.lbl_houseNumber.TabIndex = 21;
+            this.lbl_houseNumber.Text = "Hausnummer:";
+            // 
+            // txt_houseNumber
+            // 
+            this.txt_houseNumber.Location = new System.Drawing.Point(342, 392);
+            this.txt_houseNumber.Name = "txt_houseNumber";
+            this.txt_houseNumber.Size = new System.Drawing.Size(196, 22);
+            this.txt_houseNumber.TabIndex = 22;
+            // 
+            // lbl_eventName
+            // 
+            this.lbl_eventName.AutoSize = true;
+            this.lbl_eventName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_eventName.Location = new System.Drawing.Point(13, 126);
+            this.lbl_eventName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_eventName.Name = "lbl_eventName";
+            this.lbl_eventName.Size = new System.Drawing.Size(208, 29);
+            this.lbl_eventName.TabIndex = 23;
+            this.lbl_eventName.Text = "Name des Events:";
+            // 
+            // txt_nameEvent
+            // 
+            this.txt_nameEvent.Location = new System.Drawing.Point(342, 133);
+            this.txt_nameEvent.Name = "txt_nameEvent";
+            this.txt_nameEvent.Size = new System.Drawing.Size(196, 22);
+            this.txt_nameEvent.TabIndex = 24;
+            this.txt_nameEvent.TextChanged += new System.EventHandler(this.txt_nameEvent_TextChanged);
+            // 
+            // numericUpDownBudget
+            // 
+            this.numericUpDownBudget.Location = new System.Drawing.Point(342, 476);
+            this.numericUpDownBudget.Name = "numericUpDownBudget";
+            this.numericUpDownBudget.Size = new System.Drawing.Size(196, 22);
+            this.numericUpDownBudget.TabIndex = 25;
+            // 
             // VeranstaltungsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1111, 626);
+            this.Controls.Add(this.numericUpDownBudget);
+            this.Controls.Add(this.txt_nameEvent);
+            this.Controls.Add(this.lbl_eventName);
+            this.Controls.Add(this.txt_houseNumber);
+            this.Controls.Add(this.lbl_houseNumber);
+            this.Controls.Add(this.txt_PLZ);
+            this.Controls.Add(this.lbl_plz);
             this.Controls.Add(this.btn_editTable);
-            this.Controls.Add(this.btn_VeranstaltungAdd);
-            this.Controls.Add(this.textBoxBudget);
+            this.Controls.Add(this.btn_createEvent);
             this.Controls.Add(this.lbl_budget);
-            this.Controls.Add(this.textBoxParty);
-            this.Controls.Add(this.lbl_party);
+            this.Controls.Add(this.textBoxEvent);
+            this.Controls.Add(this.lbl_event);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_TableGuests);
             this.Controls.Add(this.textBoxEssen);
             this.Controls.Add(this.lbl_Essen);
-            this.Controls.Add(this.textBoxAdresse);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxStreet);
+            this.Controls.Add(this.lbl_street);
             this.Controls.Add(this.textBoxGetränke);
             this.Controls.Add(this.lbl_getränke);
             this.Controls.Add(this.textBoxDJ);
@@ -271,6 +340,7 @@ namespace Veranstaltungssoftware
             this.Name = "VeranstaltungsForm";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBudget)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,17 +355,23 @@ namespace Veranstaltungssoftware
         private System.Windows.Forms.TextBox textBoxDJ;
         private System.Windows.Forms.Label lbl_getränke;
         private System.Windows.Forms.TextBox textBoxGetränke;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxAdresse;
+        private System.Windows.Forms.Label lbl_street;
+        private System.Windows.Forms.TextBox textBoxStreet;
         private System.Windows.Forms.Label lbl_Essen;
         private System.Windows.Forms.TextBox textBoxEssen;
         private System.Windows.Forms.Button btn_TableGuests;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lbl_party;
-        private System.Windows.Forms.TextBox textBoxParty;
+        private System.Windows.Forms.Label lbl_event;
+        private System.Windows.Forms.TextBox textBoxEvent;
         private System.Windows.Forms.Label lbl_budget;
-        private System.Windows.Forms.TextBox textBoxBudget;
-        private System.Windows.Forms.Button btn_VeranstaltungAdd;
+        private System.Windows.Forms.Button btn_createEvent;
         private System.Windows.Forms.Button btn_editTable;
+        private System.Windows.Forms.Label lbl_plz;
+        private System.Windows.Forms.TextBox txt_PLZ;
+        private System.Windows.Forms.Label lbl_houseNumber;
+        private System.Windows.Forms.TextBox txt_houseNumber;
+        private System.Windows.Forms.Label lbl_eventName;
+        private System.Windows.Forms.TextBox txt_nameEvent;
+        private System.Windows.Forms.NumericUpDown numericUpDownBudget;
     }
 }

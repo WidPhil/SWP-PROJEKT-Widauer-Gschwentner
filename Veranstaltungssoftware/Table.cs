@@ -21,16 +21,10 @@ namespace Veranstaltungssoftware
         public Table()
         {
             InitializeComponent();
-
         }
         private void chooseTable_Load(object sender, EventArgs e)
         {
-
-            //Manager.GetListofTables();
-            //for (Manager.iForTables = 0; Manager.iForTables < Manager.tList.Count; Manager.iForTables++)
-            //{
-            //    comboBox_Tables.Items.Add(Manager.tList[Manager.iForTables].ToString());
-            //}
+            
         }
         private void btn_createTable_Click(object sender, EventArgs e)
         {
@@ -39,8 +33,7 @@ namespace Veranstaltungssoftware
         }
         private void btn_UseTable_Click(object sender, EventArgs e)
         {
-            //Gridview GV = new Gridview();
-            //GV.Show();
+            
         }
         private void btn_deleteTable_Click(object sender, EventArgs e)
         {
@@ -49,7 +42,7 @@ namespace Veranstaltungssoftware
         }
 
 
-        //Spalten
+        
         #region _Columns
         private void txtbox_col2_TextChanged(object sender, EventArgs e)
         {
