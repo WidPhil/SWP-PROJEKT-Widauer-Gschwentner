@@ -12,29 +12,24 @@ namespace Veranstaltungssoftware
     {
         public static string ConnectionString = "server = (localdb)\\MSSQLLocalDB;Database =" + NameofDB + ";Integrated Security = true";
 
-    
-        //public static List<string> colList = new List<string>(3);
-
         public static int iForDatabases;
         public static int iForTables;
 
+        public static string nameofEvent = Veranstaltung.NamederVeranstaltung;
         public static string preferedbeverage = Veranstaltung.VorliebederGetränke;
         public static string preferedfood = Veranstaltung.VorliebederSpeisen;
         public static string street = Veranstaltung.Strasse;
         public static string house = Veranstaltung.Hausnummer;
         public static string postcode = Veranstaltung.PLZ;
         public static string typeofEvent = Veranstaltung.TypeofEvent;
+        public static int ID;
        
 
-        //public static Login connect = new Login();
+   
         public static string NameofDB;
-        public static string NewNameofDB;
         public static string NameofTBL;
         public static SqlConnection con;
 
-
-
-        //cmd.ExecuteNonQuery();
    
         //Datenbank erstellen, löschen und verändern
 
@@ -87,7 +82,7 @@ namespace Veranstaltungssoftware
             {
                 con = new SqlConnection(ConnectionString);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("CREATE TABLE " + NameofTBL + " (" + "'" + Column1 + "' " + "INT PRIMARY KEY," + " '" + Column2 + "' " + "VARCHAR NOT NULL," + " '" + Column3 + "' " + "VARCHAR NOT NULL," + " '" + Column4 + "' " + "VARCHAR NOT NULL" + ");", con);
+                SqlCommand cmd = new SqlCommand("CREATE TABLE " + NameofTBL + " (" + "'" + ID + "' " + "INT PRIMARY KEY," + " '" + nameofEvent + "' " + "VARCHAR NOT NULL," + " '" + street + "' " + "VARCHAR NOT NULL," + " '" + house + "' " + "VARCHAR NOT NULL" + ");", con);
                 cmd.ExecuteNonQuery();
                 iForTables++;
 
@@ -119,16 +114,16 @@ namespace Veranstaltungssoftware
             con.Close();
             MessageBox.Show("Table Successfully deleted!");
         }
-        public static void AlterTBL()
-        {
-            con = new SqlConnection(ConnectionString);
-            con.Open();
+        //public static void AlterTBL()
+        //{
+        //    con = new SqlConnection(ConnectionString);
+        //    con.Open();
           
-            SqlCommand cmd = new SqlCommand();
-            cmd.ExecuteNonQuery();
-            con.Close();
+        //    SqlCommand cmd = new SqlCommand();
+        //    cmd.ExecuteNonQuery();
+        //    con.Close();
 
-        }
+        //}
 
     }
 }
