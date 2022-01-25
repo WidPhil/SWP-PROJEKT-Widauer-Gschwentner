@@ -23,7 +23,7 @@ namespace Veranstaltungssoftware
         public static string postcode = Veranstaltung.PLZ;
         public static string typeofEvent = Veranstaltung.TypeofEvent;
         public static int ID;
-       
+        //df
 
    
         public static string NameofDB;

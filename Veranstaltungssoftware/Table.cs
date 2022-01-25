@@ -12,19 +12,14 @@ namespace Veranstaltungssoftware
 {
     public partial class Table : Form
     {
-        #region columns
-        public static string col1;
-        public static string col2;
-        public static string col3;
-        public static string col4;
-        #endregion 
+
         public Table()
         {
             InitializeComponent();
         }
         private void chooseTable_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void btn_createTable_Click(object sender, EventArgs e)
         {
@@ -40,6 +35,8 @@ namespace Veranstaltungssoftware
             Manager.NameofTBL = comboBox_Tables.Text;
             Manager.deleteTBL();
         }
+
+
 
 
         
@@ -59,6 +56,7 @@ namespace Veranstaltungssoftware
             col4 = txtbox_col4.Text;
         }
         #endregion         
+
 
         private void Table_Load(object sender, EventArgs e)
         {
