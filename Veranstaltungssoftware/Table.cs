@@ -12,12 +12,7 @@ namespace Veranstaltungssoftware
 {
     public partial class Table : Form
     {
-        #region columns
-        public static string col1;
-        public static string col2;
-        public static string col3;
-        public static string col4;
-        #endregion 
+
         public Table()
         {
             InitializeComponent();
@@ -25,12 +20,6 @@ namespace Veranstaltungssoftware
         }
         private void chooseTable_Load(object sender, EventArgs e)
         {
-
-            //Manager.GetListofTables();
-            //for (Manager.iForTables = 0; Manager.iForTables < Manager.tList.Count; Manager.iForTables++)
-            //{
-            //    comboBox_Tables.Items.Add(Manager.tList[Manager.iForTables].ToString());
-            //}
         }
         private void btn_createTable_Click(object sender, EventArgs e)
         {
@@ -48,24 +37,6 @@ namespace Veranstaltungssoftware
             Manager.deleteTBL();
         }
 
-
-        //Spalten
-        #region _Columns
-        private void txtbox_col2_TextChanged(object sender, EventArgs e)
-        {
-            col2 = txtbox_col2.Text;
-        }
-
-        private void txtbox_col3_TextChanged(object sender, EventArgs e)
-        {
-            col3 = txtbox_col3.Text;
-        }
-
-        private void txtbox_col4_TextChanged(object sender, EventArgs e)
-        {
-            col4 = txtbox_col4.Text;
-        }
-        #endregion         
 
         private void Table_Load(object sender, EventArgs e)
         {
