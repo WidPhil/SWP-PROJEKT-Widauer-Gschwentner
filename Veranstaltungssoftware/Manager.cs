@@ -78,26 +78,7 @@ namespace Veranstaltungssoftware
             con.Close();
             MessageBox.Show("Database Successfully deleted!");
         }
-        //Name der Datenbank ändern
-        public static void AlterDB()
-        {
-
-            try
-            {
-                con = new SqlConnection(ConnectionString);
-                con.Open();
-                SqlCommand cmd = new SqlCommand("ALTER DATABASE " + NameofDB + " MODIFY NAME = " + NewNameofDB, con);
-                cmd.ExecuteNonQuery();
-                iForDatabases++;
-
-            }
-            catch (ConnectionException cex)
-            {
-                MessageBox.Show(cex.ToString());
-            }
-            con.Close();
-            MessageBox.Show("Database Successfully Altered!");
-        }
+    
         //Tabelle
         public static void createTBL()
         {
