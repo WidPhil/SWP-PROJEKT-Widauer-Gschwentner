@@ -12,6 +12,17 @@ namespace Veranstaltungssoftware
 {
     public partial class VeranstaltungsForm : Form
     {
+        #region variables
+        static string VorliebederGetränke;
+        static string VorliebederSpeisen;
+        static string Strasse;
+        static string ArtderVeranstaltung;
+        static decimal Budget;
+        static string Hausnummer;
+        static string PLZ;
+
+
+        #endregion
         public VeranstaltungsForm()
         {
             InitializeComponent();
@@ -60,6 +71,29 @@ namespace Veranstaltungssoftware
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_nameEvent_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_createEvent_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btn_createEvent_Click_1(object sender, EventArgs e)
+        {            
+                VorliebederGetränke = textBoxGetränke.Text;
+                VorliebederSpeisen = textBoxEssen.Text;
+                Strasse = textBoxStreet.Text;
+                Hausnummer = txt_houseNumber.Text;
+                PLZ = txt_PLZ.Text;
+                ArtderVeranstaltung = textBoxEvent.Text;
+                Budget = numericUpDownBudget.Value;
+                Manager.CreateTable();
+            
         }
     }
 }

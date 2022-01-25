@@ -79,7 +79,7 @@ namespace Veranstaltungssoftware
             // btn_delete
             // 
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Location = new System.Drawing.Point(37, 103);
+            this.btn_delete.Location = new System.Drawing.Point(37, 113);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(351, 48);
             this.btn_delete.TabIndex = 4;
