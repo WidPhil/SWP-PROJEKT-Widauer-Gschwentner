@@ -31,11 +31,11 @@ namespace Veranstaltungssoftware
         {
             this.btn_db = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,16 +57,6 @@ namespace Veranstaltungssoftware
             this.textBox1.Size = new System.Drawing.Size(132, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "(localdb)\\MSSQLLocalDB";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Veranstaltungssoftware.Properties.Resources.COVID_19_Testzertifikat_Widauer_20211030_2021_10_31_12_22_44;
-            this.pictureBox1.Location = new System.Drawing.Point(353, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // lbl_Title
             // 
@@ -110,6 +100,15 @@ namespace Veranstaltungssoftware
             this.label3.TabIndex = 10;
             this.label3.Text = "Creators: Philip Widauer; Daniel Gschwentner";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(278, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(218, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Loginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,10 +136,10 @@ namespace Veranstaltungssoftware
 
         private System.Windows.Forms.Button btn_db;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_Title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
