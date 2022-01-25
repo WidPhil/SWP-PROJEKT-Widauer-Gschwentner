@@ -46,6 +46,8 @@ namespace Veranstaltungssoftware
             this.textBoxParty = new System.Windows.Forms.TextBox();
             this.lbl_budget = new System.Windows.Forms.Label();
             this.textBoxBudget = new System.Windows.Forms.TextBox();
+            this.btn_VeranstaltungAdd = new System.Windows.Forms.Button();
+            this.btn_editTable = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -163,7 +165,7 @@ namespace Veranstaltungssoftware
             this.btn_TableGuests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_TableGuests.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TableGuests.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_TableGuests.Location = new System.Drawing.Point(835, 53);
+            this.btn_TableGuests.Location = new System.Drawing.Point(717, 55);
             this.btn_TableGuests.Name = "btn_TableGuests";
             this.btn_TableGuests.Size = new System.Drawing.Size(335, 70);
             this.btn_TableGuests.TabIndex = 11;
@@ -173,9 +175,9 @@ namespace Veranstaltungssoftware
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(787, 146);
+            this.dataGridView1.Location = new System.Drawing.Point(656, 146);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(441, 445);
+            this.dataGridView1.Size = new System.Drawing.Size(441, 359);
             this.dataGridView1.TabIndex = 12;
             // 
             // lbl_party
@@ -216,12 +218,36 @@ namespace Veranstaltungssoftware
             this.textBoxBudget.Size = new System.Drawing.Size(196, 22);
             this.textBoxBudget.TabIndex = 16;
             // 
+            // btn_VeranstaltungAdd
+            // 
+            this.btn_VeranstaltungAdd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_VeranstaltungAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_VeranstaltungAdd.Location = new System.Drawing.Point(18, 548);
+            this.btn_VeranstaltungAdd.Name = "btn_VeranstaltungAdd";
+            this.btn_VeranstaltungAdd.Size = new System.Drawing.Size(520, 43);
+            this.btn_VeranstaltungAdd.TabIndex = 17;
+            this.btn_VeranstaltungAdd.Text = "Veranstaltung hinzufügen";
+            this.btn_VeranstaltungAdd.UseVisualStyleBackColor = false;
+            // 
+            // btn_editTable
+            // 
+            this.btn_editTable.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_editTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editTable.Location = new System.Drawing.Point(577, 548);
+            this.btn_editTable.Name = "btn_editTable";
+            this.btn_editTable.Size = new System.Drawing.Size(520, 43);
+            this.btn_editTable.TabIndex = 18;
+            this.btn_editTable.Text = "Gästetabelle bearbeiten";
+            this.btn_editTable.UseVisualStyleBackColor = false;
+            // 
             // VeranstaltungsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1335, 626);
+            this.ClientSize = new System.Drawing.Size(1111, 626);
+            this.Controls.Add(this.btn_editTable);
+            this.Controls.Add(this.btn_VeranstaltungAdd);
             this.Controls.Add(this.textBoxBudget);
             this.Controls.Add(this.lbl_budget);
             this.Controls.Add(this.textBoxParty);
@@ -241,7 +267,7 @@ namespace Veranstaltungssoftware
             this.Controls.Add(this.lbl_veranstaltungsform);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VeranstaltungsForm";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -269,5 +295,7 @@ namespace Veranstaltungssoftware
         private System.Windows.Forms.TextBox textBoxParty;
         private System.Windows.Forms.Label lbl_budget;
         private System.Windows.Forms.TextBox textBoxBudget;
+        private System.Windows.Forms.Button btn_VeranstaltungAdd;
+        private System.Windows.Forms.Button btn_editTable;
     }
 }
