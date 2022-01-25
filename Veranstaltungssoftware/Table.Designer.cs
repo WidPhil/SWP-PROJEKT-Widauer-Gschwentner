@@ -37,6 +37,7 @@ namespace Veranstaltungssoftware
             this.comboBox_Tables3 = new System.Windows.Forms.ComboBox();
             this.txtbox_col4 = new System.Windows.Forms.Label();
             this.comboBox_Tables4 = new System.Windows.Forms.ComboBox();
+            this.btn_Exit1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Table
@@ -115,12 +116,24 @@ namespace Veranstaltungssoftware
             this.comboBox_Tables4.Size = new System.Drawing.Size(159, 21);
             this.comboBox_Tables4.TabIndex = 7;
             // 
+            // btn_Exit1
+            // 
+            this.btn_Exit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit1.Location = new System.Drawing.Point(12, 375);
+            this.btn_Exit1.Name = "btn_Exit1";
+            this.btn_Exit1.Size = new System.Drawing.Size(248, 48);
+            this.btn_Exit1.TabIndex = 8;
+            this.btn_Exit1.Text = "Exit";
+            this.btn_Exit1.UseVisualStyleBackColor = true;
+            this.btn_Exit1.Click += new System.EventHandler(this.btn_Exit1_Click);
+            // 
             // Table
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(272, 389);
+            this.ClientSize = new System.Drawing.Size(272, 435);
+            this.Controls.Add(this.btn_Exit1);
             this.Controls.Add(this.comboBox_Tables4);
             this.Controls.Add(this.txtbox_col4);
             this.Controls.Add(this.comboBox_Tables3);
@@ -147,5 +160,6 @@ namespace Veranstaltungssoftware
         private System.Windows.Forms.ComboBox comboBox_Tables3;
         private System.Windows.Forms.Label txtbox_col4;
         private System.Windows.Forms.ComboBox comboBox_Tables4;
+        private System.Windows.Forms.Button btn_Exit1;
     }
 }
