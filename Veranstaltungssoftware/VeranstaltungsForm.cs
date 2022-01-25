@@ -13,13 +13,14 @@ namespace Veranstaltungssoftware
     public partial class VeranstaltungsForm : Form
     {
         #region variables
-        static string VorliebederGetränke;
-        static string VorliebederSpeisen;
-        static string Strasse;
-        static string ArtderVeranstaltung;
-        static decimal Budget;
-        static string Hausnummer;
-        static string PLZ;
+        public static string NamedesEvents;
+        public static string VorliebederGetränke;
+        public static string VorliebederSpeisen;
+        public static string Strasse;
+        public static string ArtderVeranstaltung;
+        public static decimal Budget;
+        public static string Hausnummer;
+        public static string PLZ;
 
 
         #endregion
@@ -84,7 +85,8 @@ namespace Veranstaltungssoftware
         }
 
         private void btn_createEvent_Click_1(object sender, EventArgs e)
-        {            
+        {
+                NamedesEvents = txt_nameEvent.Text;
                 VorliebederGetränke = textBoxGetränke.Text;
                 VorliebederSpeisen = textBoxEssen.Text;
                 Strasse = textBoxStreet.Text;
@@ -92,7 +94,7 @@ namespace Veranstaltungssoftware
                 PLZ = txt_PLZ.Text;
                 ArtderVeranstaltung = textBoxEvent.Text;
                 Budget = numericUpDownBudget.Value;
-                Manager.CreateTable();
+                Manager.createTBL();
             
         }
     }
