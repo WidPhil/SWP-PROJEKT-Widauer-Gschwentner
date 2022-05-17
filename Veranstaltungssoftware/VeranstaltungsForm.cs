@@ -48,7 +48,7 @@ namespace Veranstaltungssoftware
                 NameofCreator = txtbox_nameofCreator.Text;
                 emailofCreator = txtbox_emailofcreator.Text;
                 datetime = dtp_datetime.Value;
-                Manager.createTBL();
+                Manager.createTable();
         }
 
         private void btn_TableGuests_Click(object sender, EventArgs e)

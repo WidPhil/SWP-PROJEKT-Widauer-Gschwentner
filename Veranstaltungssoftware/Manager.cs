@@ -84,9 +84,9 @@ namespace Veranstaltungssoftware
                 con = new SqlConnection(ConnectionString);
                 con.Open();
 
-                SqlCommand com = new SqlCommand("CREATE TABLE guests(ID varchar(200), Vorname varchar(20), Nachname varchar(20), Geburtsdatum varchar(20)");
+                SqlCommand com = new SqlCommand("CREATE TABLE guests(ID varchar(200), Vorname varchar(20), Nachname varchar(20), Geburtsdatum varchar(20)", con);
                 com.ExecuteNonQuery();
-                SqlCommand cmd = new SqlCommand("CREATE TABLE event(ID varchar(200), NamedesEvents varchar(50), AnzahlderGaeste varchar(50), ", con);
+                SqlCommand cmd = new SqlCommand("CREATE TABLE event(ID varchar(200), NamedesEvents varchar(50), AnzahlderGaeste varchar(50), Chef varchar(50)", con);
                 cmd.ExecuteNonQuery();
                 iForTables++;
 
@@ -98,6 +98,22 @@ namespace Veranstaltungssoftware
             con.Close();
             MessageBox.Show("Table Successfully created!");
 
+        }
+
+        public static void InsertintoTable(string nameofTable)
+        {
+            try
+            {
+                con = new SqlConnection(ConnectionString);
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand("Insert into")
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         public static void deleteTBL()
         {
