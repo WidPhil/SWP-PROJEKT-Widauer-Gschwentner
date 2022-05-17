@@ -144,7 +144,6 @@ namespace Veranstaltungssoftware
             this.Controls.Add(this.lbl_Table);
             this.Name = "Table";
             this.Text = "Table";
-            this.Load += new System.EventHandler(this.Table_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

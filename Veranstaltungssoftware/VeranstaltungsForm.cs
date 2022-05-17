@@ -13,87 +13,49 @@ namespace Veranstaltungssoftware
     public partial class VeranstaltungsForm : Form
     {
         #region variables
-        static string VorliebederGetränke;
-        static string VorliebederSpeisen;
-        static string Strasse;
-        static string ArtderVeranstaltung;
-        static decimal Budget;
-        static string Hausnummer;
-        static string PLZ;
-
-
+        public static string name;
+        public static string food;
+        public static string drinks;
+        public static string DJ;
+        public static string Street;
+        public static string TypeofEvent;
+        public static decimal Budget;
+        public static string housecode;
+        public static string zip;
+        public static decimal guests;
+        public static string NameofCreator;
+        public static string emailofCreator;
+        public DateTime datetime;
         #endregion
         public VeranstaltungsForm()
         {
             InitializeComponent();
         }
 
-        private void lbl_veranstaltungsform_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_guests_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_dj_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_getränke_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_Essen_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_party_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_nameEvent_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_createEvent_Click(object sender, EventArgs e)
-        {
-           
-        }
+      
 
         private void btn_createEvent_Click_1(object sender, EventArgs e)
-        {            
-                VorliebederGetränke = textBoxGetränke.Text;
-                VorliebederSpeisen = textBoxEssen.Text;
-                Strasse = textBoxStreet.Text;
-                Hausnummer = txt_houseNumber.Text;
-                PLZ = txt_PLZ.Text;
-                ArtderVeranstaltung = textBoxEvent.Text;
+        {
+                name = txt_nameEvent.Text;
+                drinks = textBoxGetränke.Text;
+                food = textBoxEssen.Text;
+                Street = textBoxStreet.Text;
+                housecode = txt_houseNumber.Text;
+                zip = txt_PLZ.Text;
+                guests = NUD_guests.Value;
+                TypeofEvent = textBoxEvent.Text;
                 Budget = numericUpDownBudget.Value;
-                Manager.CreateTable();
-            
+                NameofCreator = txtbox_nameofCreator.Text;
+                emailofCreator = txtbox_emailofcreator.Text;
+                datetime = dtp_datetime.Value;
+                Manager.createTBL();
+        }
+
+        private void btn_TableGuests_Click(object sender, EventArgs e)
+        {
+            Grid grid = new Grid();
+            grid.Show();
+
         }
     }
 }

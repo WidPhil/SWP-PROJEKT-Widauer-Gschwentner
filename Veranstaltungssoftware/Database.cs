@@ -12,6 +12,7 @@ namespace Veranstaltungssoftware
 {
     public partial class Database : Form
     {
+        public static string nameofDB;
         public Database()
         {
             InitializeComponent();
@@ -30,8 +31,8 @@ namespace Veranstaltungssoftware
 
         private void btn_create_Click(object sender, EventArgs e)
         {
-            Manager.NameofDB = combobox_DB.Text;
-            Manager.createDB();
+            nameofDB = combobox_DB.Text;
+            Manager.createTable();
         }
 
         private void btn_delete_Click(object sender, EventArgs e)

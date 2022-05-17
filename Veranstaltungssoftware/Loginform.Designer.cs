@@ -41,7 +41,7 @@ namespace Veranstaltungssoftware
             // 
             // btn_db
             // 
-            this.btn_db.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_db.BackColor = System.Drawing.Color.Orange;
             this.btn_db.Location = new System.Drawing.Point(23, 221);
             this.btn_db.Name = "btn_db";
             this.btn_db.Size = new System.Drawing.Size(473, 37);
@@ -56,9 +56,7 @@ namespace Veranstaltungssoftware
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 20);
             this.textBox1.TabIndex = 1;
-
             this.textBox1.Text = "(localdb)\\MSSQLLocalDB";
-
             // 
             // lbl_Title
             // 
@@ -115,14 +113,12 @@ namespace Veranstaltungssoftware
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(508, 307);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Title);
-
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_db);

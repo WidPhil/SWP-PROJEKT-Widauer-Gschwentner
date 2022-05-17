@@ -8,43 +8,44 @@ using System.Data.SqlClient;
 
 namespace Veranstaltungssoftware
 {
-    class Manager
+    class Manager : VeranstaltungsForm
     {
         public static string ConnectionString = "server = (localdb)\\MSSQLLocalDB;Database =" + NameofDB + ";Integrated Security = true";
 
         public static int iForDatabases;
         public static int iForTables;
 
-        public static string nameofEvent = Veranstaltung.NamederVeranstaltung;
-        public static string preferedbeverage = Veranstaltung.VorliebederGetränke;
-        public static string preferedfood = Veranstaltung.VorliebederSpeisen;
-        public static string street = Veranstaltung.Strasse;
-        public static string house = Veranstaltung.Hausnummer;
-        public static string postcode = Veranstaltung.PLZ;
-        public static string typeofEvent = Veranstaltung.TypeofEvent;
+        public static string nameofEvent = name;
+        public static string preferedbeverage = drinks;
+        public static string preferedfood = food;
+        public static string street = Street;
+        public static string house = housecode;
+        public static string postcode = zip;
+        public static string typeofEvent = TypeofEvent;
+        public static string nameofCreator = NameofCreator;
+        public static string EmailofCreator = emailofCreator;
+        public static decimal budget = Budget;
+        
         public static int ID;
         //df
 
-   
+
         public static string NameofDB;
         public static string NameofTBL;
         public static SqlConnection con;
 
    
         //Datenbank erstellen, löschen und verändern
-
-        public static void createDB()
+        //Wir brauchen Tabelle Veranstaltung und Tabelle Gäste
+        public static void createDatabase()
         {
             try
             {
                 con = new SqlConnection(ConnectionString);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("CREATE DATABASE " + NameofDB, con);
+                SqlCommand cmd = new SqlCommand("CREATE DATABASE Event", con);
                 cmd.ExecuteNonQuery();
                 iForDatabases++;
-                SqlCommand com = new SqlCommand("USE DATABASE " + NameofDB, con);
-                com.ExecuteNonQuery();
-
             }
             catch (ConnectionException cex)
             {
@@ -75,14 +76,17 @@ namespace Veranstaltungssoftware
         }
     
         //Tabelle
-        public static void createTBL()
+        public static void createTable()
         {
             //Funktioniert nicht
             try
             {
                 con = new SqlConnection(ConnectionString);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("CREATE TABLE " + NameofTBL + " (" + "'" + ID + "' " + "INT PRIMARY KEY," + " '" + nameofEvent + "' " + "VARCHAR NOT NULL," + " '" + street + "' " + "VARCHAR NOT NULL," + " '" + house + "' " + "VARCHAR NOT NULL" + ");", con);
+
+                SqlCommand com = new SqlCommand("CREATE TABLE guests(ID varchar(200), Vorname varchar(20), Nachname varchar(20), Geburtsdatum varchar(20)");
+                com.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("CREATE TABLE event(ID varchar(200), NamedesEvents varchar(50), AnzahlderGaeste varchar(50), ", con);
                 cmd.ExecuteNonQuery();
                 iForTables++;
 
@@ -118,12 +122,19 @@ namespace Veranstaltungssoftware
         //{
         //    con = new SqlConnection(ConnectionString);
         //    con.Open();
-          
+
         //    SqlCommand cmd = new SqlCommand();
         //    cmd.ExecuteNonQuery();
         //    con.Close();
 
         //}
+        public static void searchData()
+        {
+        //SELECT CustomerID, CompanyName, ContactName, ContactTitle,
+        //Address, City, Region, PostalCode, Country, Phone, Fax
+        //FROM Customers
+        //WHERE City = @City
+        }
 
     }
 }

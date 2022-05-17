@@ -79,9 +79,9 @@ namespace Veranstaltungssoftware
             // btn_delete
             // 
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Location = new System.Drawing.Point(37, 113);
+            this.btn_delete.Location = new System.Drawing.Point(102, 135);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(351, 48);
+            this.btn_delete.Size = new System.Drawing.Size(264, 30);
             this.btn_delete.TabIndex = 4;
             this.btn_delete.Text = "delete";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -89,9 +89,9 @@ namespace Veranstaltungssoftware
             // btn_Exit
             // 
             this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.Location = new System.Drawing.Point(37, 167);
+            this.btn_Exit.Location = new System.Drawing.Point(102, 189);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(351, 48);
+            this.btn_Exit.Size = new System.Drawing.Size(264, 30);
             this.btn_Exit.TabIndex = 5;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
