@@ -48,7 +48,6 @@ namespace Veranstaltungssoftware
             this.btn_db.TabIndex = 0;
             this.btn_db.Text = "Weiter";
             this.btn_db.UseVisualStyleBackColor = false;
-            this.btn_db.Click += new System.EventHandler(this.btn_db_Click);
             // 
             // textBox1
             // 

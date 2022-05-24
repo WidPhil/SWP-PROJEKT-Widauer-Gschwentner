@@ -13,6 +13,7 @@ namespace Veranstaltungssoftware
     public partial class VeranstaltungsForm : Form
     {
         #region variables
+        public static string NameofTable;
         public static string name;
         public static string food;
         public static string drinks;
@@ -27,6 +28,9 @@ namespace Veranstaltungssoftware
         public static string emailofCreator;
         public DateTime datetime;
         #endregion
+
+
+
         public VeranstaltungsForm()
         {
             InitializeComponent();
@@ -56,6 +60,16 @@ namespace Veranstaltungssoftware
             Grid grid = new Grid();
             grid.Show();
 
+        }
+
+        private void btn_showEvent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_showTable_Click(object sender, EventArgs e)
+        {
+            cb_NameofTable.Text = NameofTable;
         }
     }
 }

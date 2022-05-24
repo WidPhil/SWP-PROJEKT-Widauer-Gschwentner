@@ -30,8 +30,6 @@ namespace Veranstaltungssoftware
         //df
 
 
-        public static string NameofDB;
-        public static string NameofTBL;
         public static SqlConnection con;
 
    
@@ -104,10 +102,11 @@ namespace Veranstaltungssoftware
         {
             try
             {
+                //if ()
                 con = new SqlConnection(ConnectionString);
                 con.Open();
 
-                SqlCommand cmd = new SqlCommand("Insert into")
+                SqlCommand cmd = new SqlCommand("Insert into");
             }
             catch (Exception)
             {
@@ -152,5 +151,29 @@ namespace Veranstaltungssoftware
         //WHERE City = @City
         }
 
+        private void InitializeComponent()
+        {
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(652, 664);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(305, 24);
+            this.comboBox1.TabIndex = 36;
+            // 
+            // Manager
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1250, 784);
+            this.Controls.Add(this.comboBox1);
+            this.Name = "Manager";
+            this.Controls.SetChildIndex(this.comboBox1, 0);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
     }
 }
