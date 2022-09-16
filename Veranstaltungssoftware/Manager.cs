@@ -15,6 +15,15 @@ namespace Veranstaltungssoftware
         public static int iForDatabases;
         public static int iForTables;
 
+ Daniel
+        public static string nameofEvent = VeranstaltungsForm.NamedesEvents;
+        public static string preferedbeverage = VeranstaltungsForm.VorliebederGetränke;
+        public static string preferedfood = VeranstaltungsForm.VorliebederSpeisen;
+        public static string street = VeranstaltungsForm.Strasse;
+        public static string house = VeranstaltungsForm.Hausnummer;
+        public static string postcode = VeranstaltungsForm.PLZ;
+        public static string typeofEvent = VeranstaltungsForm.ArtderVeranstaltung;
+
         public static string nameofEvent = name;
         public static string preferedbeverage = drinks;
         public static string preferedfood = food;
@@ -26,13 +35,21 @@ namespace Veranstaltungssoftware
         public static string EmailofCreator = emailofCreator;
         public static decimal budget = Budget;
         
+ main
         public static int ID;
         //df
+
+
+ Daniel
+        public static string NameofDB;
+        public static string NameofTBL;
+        public static SqlConnection con;
 
 
         public static SqlConnection con;
 
    
+ main
         //Datenbank erstellen, löschen und verändern
         //Wir brauchen Tabelle Veranstaltung und Tabelle Gäste
         public static void createDatabase()
@@ -72,6 +89,11 @@ namespace Veranstaltungssoftware
             con.Close();
             MessageBox.Show("Database Successfully deleted!");
         }
+ Daniel
+
+        //Tabelle
+        public static void createTBL()
+
     
         //Tabelle
         public static void createTable()
@@ -99,12 +121,19 @@ namespace Veranstaltungssoftware
         }
 
         public static void InsertintoTable(string nameofTable)
+ main
         {
             try
             {
                 //if ()
                 con = new SqlConnection(ConnectionString);
                 con.Open();
+ Daniel
+                SqlCommand cmd = new SqlCommand("CREATE TABLE " + NameofTBL + " (" + "'" + ID + "' " + "INT PRIMARY KEY," + " '" + nameofEvent + "' " + "VARCHAR NOT NULL," + " '" + street + "' " + "VARCHAR NOT NULL," + " '" + house + "' " + "VARCHAR NOT NULL" + ");", con);
+                cmd.ExecuteNonQuery();
+                iForTables++;
+
+ main
 
                 SqlCommand cmd = new SqlCommand("Insert into");
             }
@@ -133,6 +162,9 @@ namespace Veranstaltungssoftware
             con.Close();
             MessageBox.Show("Table Successfully deleted!");
         }
+ Daniel
+        
+
         //public static void AlterTBL()
         //{
         //    con = new SqlConnection(ConnectionString);
@@ -150,6 +182,7 @@ namespace Veranstaltungssoftware
         //FROM Customers
         //WHERE City = @City
         }
+ main
 
         private void InitializeComponent()
         {
