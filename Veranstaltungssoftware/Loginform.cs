@@ -19,14 +19,7 @@ namespace Veranstaltungssoftware
 
         private void Loginform_Load(object sender, EventArgs e)
         {
-
+            Manager.createDatabase();
         }
-
-        private void btn_db_Click(object sender, EventArgs e)
-        {
-            Database cdb = new Database();
-            cdb.Show();
-        }
-        
     }
 }

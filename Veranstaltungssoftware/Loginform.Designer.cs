@@ -31,24 +31,23 @@ namespace Veranstaltungssoftware
         {
             this.btn_db = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_db
             // 
-            this.btn_db.BackColor = System.Drawing.Color.DarkCyan;
+            this.btn_db.BackColor = System.Drawing.Color.Orange;
             this.btn_db.Location = new System.Drawing.Point(23, 221);
             this.btn_db.Name = "btn_db";
             this.btn_db.Size = new System.Drawing.Size(473, 37);
             this.btn_db.TabIndex = 0;
             this.btn_db.Text = "Weiter";
             this.btn_db.UseVisualStyleBackColor = false;
-            this.btn_db.Click += new System.EventHandler(this.btn_db_Click);
             // 
             // textBox1
             // 
@@ -56,19 +55,7 @@ namespace Veranstaltungssoftware
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 20);
             this.textBox1.TabIndex = 1;
-
             this.textBox1.Text = "(localdb)\\MSSQLLocalDB";
-
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Veranstaltungssoftware.Properties.Resources.COVID_19_Testzertifikat_Widauer_20211030_2021_10_31_12_22_44;
-            this.pictureBox1.Location = new System.Drawing.Point(353, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(143, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // lbl_Title
             // 
@@ -112,18 +99,25 @@ namespace Veranstaltungssoftware
             this.label3.TabIndex = 10;
             this.label3.Text = "Creators: Philip Widauer; Daniel Gschwentner";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(278, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(218, 176);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Loginform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(508, 307);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Title);
-
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_db);
@@ -141,10 +135,10 @@ namespace Veranstaltungssoftware
 
         private System.Windows.Forms.Button btn_db;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_Title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
